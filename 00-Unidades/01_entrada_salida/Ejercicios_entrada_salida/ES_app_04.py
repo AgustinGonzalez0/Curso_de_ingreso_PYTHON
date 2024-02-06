@@ -33,7 +33,9 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+         nombreingresado = prompt(title="UTN FRA", prompt= "cual es tu nombre" )
+         self.txt_nombre.delete(0,100)
+         self.txt_nombre.insert(0,nombreingresado)
         
     
 if __name__ == "__main__":
