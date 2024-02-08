@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre: agustin
+apellido: gonzalez:
 ---
 TP: While_validaciones_rising_btl
 ---
@@ -15,7 +15,7 @@ Rising BTL. Empresa dedicada a la toma de datos para realizar estadísticas y ce
 por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
 
 Los datos requeridos son los siguientes:
-    Apellido
+    apellido: gonzalez
     Edad, entre 18 y 90 años inclusive.
     Estado civil, ["Soltero/a", "Casado/a", "Divorciado/a", "Viudo/a"]
     Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
@@ -29,10 +29,10 @@ class App(customtkinter.CTk):
         
         self.title("UTN Fra")
 
-        self.label0 = customtkinter.CTkLabel(master=self, text="Apellido")
+        self.label0 = customtkinter.CTkLabel(master=self, text="apellido: gonzalez")
         self.label0.grid(row=0, column=0, padx=20, pady=10)
-        self.txt_apellido = customtkinter.CTkEntry(master=self)
-        self.txt_apellido.grid(row=0, column=1)
+        self.txt_apellido: gonzalez = customtkinter.CTkEntry(master=self)
+        self.txt_apellido: gonzalez.grid(row=0, column=1)
 
         self.label1 = customtkinter.CTkLabel(master=self, text="Edad")
         self.label1.grid(row=1, column=0, padx=20, pady=10)
